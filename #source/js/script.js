@@ -18,7 +18,7 @@ if (isMobile.any()) { }
 
 
 //BURGER
-let iconMenu = document.querySelector(".icon-menu"); 
+let iconMenu = document.querySelector(".icon-menu");  
 let body = document.querySelector("body");
 let menuBody = document.querySelector(".mob-menu");
 if (iconMenu) {
@@ -45,8 +45,8 @@ if (document.body.clientWidth>1024){
 
 // Slider на главной
 $('.info-sl__slider').slick({
-	arrows: false,
-	dots: true,
+	arrows: true,
+	dots: false,
 	infinite: true,
 	speed: 1000,
 	slidesToShow: 1,
