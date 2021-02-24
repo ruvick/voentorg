@@ -1,9 +1,46 @@
 .footer{
 	min-height: 230px;
-	background: #333333;
+	background: #333333; 
+	display: flex;
+	align-items: center;
 }
-//====================================================================================================
 
+.footer__row {
+	justify-content: space-between;
+}
 
-
- 
+.footer-menu ul li a,
+.footer-menu ul li {
+	color: #fff;
+	margin-bottom: 15px;
+}
+.footer-menu ul {
+	margin-bottom: 25px;
+}
+.footer__policy {
+	font-size: 11px;
+	margin-bottom: 16px;
+}
+.footer__policy a {
+	font-size: 11px;
+	color: #A8A8A8;
+	display: flex;
+	align-items: center;
+}
+.footer__policy a:before {
+	content:'';
+	float: left;
+	width: 13px;
+	height: 15px;
+	margin-right: 10px;
+	background-position: 0 0;
+  background-repeat: no-repeat; 
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTMiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxMyAxNSI+DQogIDxpbWFnZSBpZD0iZmlsZS1kb2N1bWVudCIgd2lkdGg9IjEzIiBoZWlnaHQ9IjE1IiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQUEwQUFBQVBDQVlBQUFBL0kwVjNBQUFBQkhOQ1NWUUlDQWdJZkFoa2lBQUFBTWhKUkVGVUtGT3QwcTBOQWpFVXdQSC9zUUFEa0FEcWFYQUl4RUVZQUkxQklGQXNnQ2ZCc3dPRUZRZ0NnOENBNVJvTW5nVXdsSlRjSmUybHZScnErdHBmMzBlYWFLMVJTazJBRVZERFhScFlpY2pERGlkWmxqV0JaK2x5c1gwQmJ5QzFvVUVkNEJaQVkyQUpOR3dZUTRQOHdZTU5vMGhFVGtxcE9sREFiZ3lkQWRPWFdRYW1RQlQ1V25YUUhyZ0hCbUxDYldCYXpqVFA2dzY1SHJEN1Mza2I0T3BKMHdkbVZ0enBhUTFjUEdnSUxFS29ZZ2JPMFM5VDFkL3pQZFJLSXIvY1JoL2dLQ0xiTDZVUldpS0FHUytWQUFBQUFFbEZUa1N1UW1DQyIvPg0KPC9zdmc+DQo=');
+}
+.footer__developer a {
+	font-size: 14px;
+	color: #A8A8A8;
+}
+.footer-menu .callback__phone {
+	color: #fff;
+}
