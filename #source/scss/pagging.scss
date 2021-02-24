@@ -1,6 +1,6 @@
 // Хлебные крошки ===============================================================================================================================================
 .breadcrumb {
-	padding-left: 13px;
+
 }
 .breadcrumb ul {
 	display: flex;
@@ -12,42 +12,39 @@
 	color: #5a5b5e;
 }
 .breadcrumb ul li a {
-	font-size: 12px;
+	font-size: 11px;
 	line-height: 23px;
 	margin-right: 5px;
-	color: #d3820f;
+	color: #a8a8a8; 
 }
 // Пагинация 1 ===============================================================================================================================================
 .pagination {
 	justify-content: center;
 	// .pagination__nav-links
 	&__nav-links {
-		max-width: 500px;
+		max-width: 232px;
 		width: 100%;
 		align-items: center;
+		min-height: 21px;
 	}
 	// .pagination__back 
 	&__back {
-		max-width: 93.5px;
-		width: 100%;
-		height: 34px;
+		height: 12px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-size: 12px;
-		border: 0.4px solid #c7c9cb;
 		margin-right: 37px;
 		position: relative;
 		&:before {
 			content: "";
 			position: absolute;
-			top: 36%;
-			left: 10%;
-			width: 5px;
-			height: 10px;
-			background: url("../img/icons/pagination__back.svg");
+			top: 0;
+			// left: 0;
+			width: 8px;
+			height: 12px;
+			background: url("../img/icons/arrow-back.svg");
 			background-repeat: no-repeat;
-		}
+		} 
 	}
 	// .pagination__numbers
 	&__numbers {
@@ -66,36 +63,32 @@
 	}
 	// .pagination__next
 	&__next {
-		max-width: 93.5px;
-		width: 100%;
-		height: 34px;
+		height: 12px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-size: 12px;
-		border: 0.4px solid #c7c9cb;
 		margin-left: 13px;
 		position: relative;
 		&:after {
 			content: "";
 			position: absolute;
-			top: 36%;
-			right: 10%;
-			width: 5px;
-			height: 10px;
-			background: url("../img/icons/pagination__next.svg");
+			top: 0;
+			// right: 10%;
+			width: 8px;
+			height: 12px;
+			background: url("../img/icons/arrow-next.svg");
 			background-repeat: no-repeat;
 		}
 	}
 }
 .current {
-	color: #d3820f;
+	color: #65B965;
 }
 // Пагинация 2 ===============================================================================================================================================
 .pagging {@include flexbox();justify-content: center;align-items: center;padding: 0px 0px 0px 0px;}
 .pagging__arrow {width: 13px;height: 24px;
 	&:first-child{background: url('../img/icons/p-left.svg') 0 0 no-repeat;background-size: 100%;}
-	&:last-child{background: url('../img/icons/p-right.svg') 0 0 no-repeat;background-size: 100%;}
+	&:last-child{background: url('../img/icons/p-right.svg') 0 0 no-repeat;background-size: 100%;} 
 }
 .pagging-list {margin: 0px 25px;@include flexbox();
 	li{margin: 0px 25px;}
