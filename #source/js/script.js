@@ -22,7 +22,7 @@ let iconMenu = document.querySelector(".icon-menu");
 let body = document.querySelector("body");
 let menuBody = document.querySelector(".mob-menu");
 if (iconMenu) {
-	iconMenu.addEventListener("click", function () {
+	iconMenu.addEventListener("click", function () { 
 		iconMenu.classList.toggle("active");
 		body.classList.toggle("lock");
 		menuBody.classList.toggle("active");
@@ -82,7 +82,8 @@ $('.select-prod-slider').slick({
 	focusOnSelect: true,
 	autoplaySpeed: 1800,
 	asNavFor: ".select-slider-big",
-	adaptiveHeight: true
+	adaptiveHeight: true,
+	vertical: true
 });
 $('.select-slider-big').slick({
 	arrows: false,
