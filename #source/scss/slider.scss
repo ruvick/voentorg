@@ -18,7 +18,7 @@
 	justify-content: center;
 	align-items: center;
 }
-.info-sl__slider button:before {
+.info-sl__slider button:before {   
 	content:'';
 	float: left;
 	width: 8px;
@@ -54,8 +54,9 @@
 	background: #F5E11E;
 	height: 78px;
 	width: 338px;
+	padding-left: 20px;
 	display: flex;
-	justify-content: center;
+	// justify-content: center;
 	align-items: center;
 	transform: rotate(-90deg);
 }
@@ -77,17 +78,23 @@
 	font-weight: 400;
 }
 .info-sl__text-new:before {
-	content:'';
-	position: absolute;
-	bottom: -2%;
-	left: 43.5%;
-	width: 361px;
-	height: 1px;
-	background-position: 0 0;
-  background-repeat: no-repeat; 
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzYxIiBoZWlnaHQ9IjEiIHZpZXdCb3g9IjAgMCAzNjEgMSI+DQogIDxnIGlkPSJfLl8uXy5f0LrQvtC/0LjRj18xMiIgZGF0YS1uYW1lPSIuIC4gLiDQutC+0L/QuNGPIDEyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzM1IC00MjUpIj4NCiAgICA8ZyBpZD0iXy5fLl8uX9C60L7Qv9C40Y9fMTItMiIgZGF0YS1uYW1lPSIuIC4gLiDQutC+0L/QuNGPIDEyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3MzUgNDI1KSI+DQogICAgICA8aW1hZ2UgaWQ9Il8uXy5fLiIgZGF0YS1uYW1lPSIuIC4gLiIgd2lkdGg9IjM2MSIgaGVpZ2h0PSIxIiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQVdrQUFBQUJDQVlBQUFBY3ExL05BQUFBQkhOQ1NWUUlDQWdJZkFoa2lBQUFBQ05KUkVGVU9FOWpaR0JnK00vQXdNRElBQUdqN05Gd0dFMERvMmxnTkEwTW9qUUFBT1pWZVFGQTBVSWZBQUFBQUVsRlRrU3VRbUNDIi8+DQogICAgPC9nPg0KICAgIDxwYXRoIGlkPSJDb2xvcl9PdmVybGF5IiBkYXRhLW5hbWU9IkNvbG9yIE92ZXJsYXkiIGQ9Ik03MzUsNDI2di0xaDM2MXYxWiIvPg0KICA8L2c+DQo8L3N2Zz4NCg==');
+// 	content:'';
+// 	position: absolute;
+// 	bottom: -2%;
+// 	left: 43.5%;
+// 	width: 361px;
+// 	height: 1px;
+// 	background-position: 0 0;
+//   background-repeat: no-repeat; 
+//   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzYxIiBoZWlnaHQ9IjEiIHZpZXdCb3g9IjAgMCAzNjEgMSI+DQogIDxnIGlkPSJfLl8uXy5f0LrQvtC/0LjRj18xMiIgZGF0YS1uYW1lPSIuIC4gLiDQutC+0L/QuNGPIDEyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzM1IC00MjUpIj4NCiAgICA8ZyBpZD0iXy5fLl8uX9C60L7Qv9C40Y9fMTItMiIgZGF0YS1uYW1lPSIuIC4gLiDQutC+0L/QuNGPIDEyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3MzUgNDI1KSI+DQogICAgICA8aW1hZ2UgaWQ9Il8uXy5fLiIgZGF0YS1uYW1lPSIuIC4gLiIgd2lkdGg9IjM2MSIgaGVpZ2h0PSIxIiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQVdrQUFBQUJDQVlBQUFBY3ExL05BQUFBQkhOQ1NWUUlDQWdJZkFoa2lBQUFBQ05KUkVGVU9FOWpaR0JnK00vQXdNRElBQUdqN05Gd0dFMERvMmxnTkEwTW9qUUFBT1pWZVFGQTBVSWZBQUFBQUVsRlRrU3VRbUNDIi8+DQogICAgPC9nPg0KICAgIDxwYXRoIGlkPSJDb2xvcl9PdmVybGF5IiBkYXRhLW5hbWU9IkNvbG9yIE92ZXJsYXkiIGQ9Ik03MzUsNDI2di0xaDM2MXYxWiIvPg0KICA8L2c+DQo8L3N2Zz4NCg==');
+// }
+			content:'....................';
+			position: absolute;
+			right: 23%;
+			bottom: -2%;
+			font-size: 15px;
+			color: #000;
 }
-
 // Двойной Слайдер выбора товаров ====================================================================================================================================================
 .select-prod {
 	padding-top: 30.8px;
