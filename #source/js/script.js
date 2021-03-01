@@ -13,7 +13,7 @@ if (isMobile.any()) { }
 
 	var act = "click";
 	if (isMobile.iOS()) {
-		var act = "touchstart"; 
+		var act = "touchstart";  
 	}
 
 
@@ -39,7 +39,7 @@ if (document.body.clientWidth>1024){
 	}
 	$(document).ready(function() {
 		$(".menu__catalogy").on("mouseover", showMenu);
-		$(".header__menu").on("mouseleave", hideMenu);
+		$(".header-bottom").on("mouseleave", hideMenu);
 	});
 }
 

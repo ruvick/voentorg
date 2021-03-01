@@ -1136,6 +1136,11 @@ body.ie .ibg img {
 .sl-big__icon-sale .sl-big__sale {
   top: 80px; }
 
+.select-prod-slider__item img {
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
 .select-prod-slider__item.slick-slide img {
   opacity: 0.5; }
 
@@ -1659,28 +1664,48 @@ body.ie .ibg img {
   transform: rotate(45deg);
   bottom: 8px; }
 
-.mob-menu {
-  position: fixed;
-  z-index: 50000;
-  background: rgba(0, 0, 0, 0.8);
-  top: 0;
-  width: 50%;
-  height: 100%;
-  padding: 35px 10px 0px 20px;
-  margin-top: 66px;
-  overflow: auto;
-  right: -100%;
-  -webkit-transition: right 0.8s;
-  -o-transition: right 0.8s;
-  transition: right 0.8s; }
+.header-bottom {
+  position: relative;
+  z-index: 5; }
 
-.mob-menu.active {
-  right: 0%; }
+.menu__body {
+  z-index: 1; }
+
+.mob-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background: #fff;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  max-width: 1140px;
+  width: 100%;
+  overflow: auto;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.28);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.28); }
+
+.mob-menu ul {
+  padding: 29px 38.6px 10px 35.4px;
+  max-width: 284px;
+  width: 100%;
+  border-left: 1px solid #EDEDED;
+  z-index: 10; }
 
 .mob-menu li a {
-  color: #fff;
-  padding-bottom: 13px;
-  display: inline-block; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000;
+  padding-bottom: 25px; }
+
+.g-active {
+  background: #65B965; }
+
+.mob-menu__addit {
+  display: none; }
 
 .footer {
   min-height: 230px;
