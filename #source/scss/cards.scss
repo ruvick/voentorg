@@ -18,13 +18,14 @@
 		margin-bottom: 30px;
 	}
 	&__link { 
-		padding: 20px 53px;
-		width: 100%;
+		// padding: 20px 53px;
+		padding: 20px 0;
+		// width: 100%;
 		min-height: 280px;
 		// flex: 1 1 auto;
 		// border-bottom: 1px solid #EAEAEA;  
 		img {
-			max-width: 100%;
+			// max-width: 100%;
 			max-height: 241px;
 			flex: 0 0 158px;
 		}
@@ -73,10 +74,12 @@
 	&__button {
 		justify-content: space-between;
 		align-items: center;
+		width: 100%;
 	}
 	// .prod-card__price
 	&__baskcet {
-	width: 132px;
+	// width: 132px;
+	width: 100%;
 	min-height: 30px;
 	justify-content: center;
 	align-items: center;
@@ -85,7 +88,8 @@
 	font-size: 14px;
 	}
 		&__order{
-	width: 132px;
+	// width: 132px;
+	width: 100%;
 	min-height: 30px;
 	justify-content: center;
 	align-items: center;
