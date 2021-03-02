@@ -481,11 +481,40 @@ h3 {
 	.header__search {
     margin: 0 20px;
 	}
+	.info-sl__text-new {
+    top: 0%;
+    left: 15%;
+	}
+	.info-sl__discounts {
+		top: 60%;
+    left: 15%;
+    transform: rotate(0deg);
+	}
 }
 
 @media (max-width: 960px) {
 .header__callback {
     max-width: 180px;
+	}
+}
+
+@media (max-width: 830px) {
+	.info-sl__text-new {
+    top: 5%;
+    left: 15%;
+	}
+	.info-sl__text-new h1 {
+		font-size: 40px;
+		line-height: 35px;
+    margin-bottom: 10px;
+	}
+	.info-sl__discounts {
+		top: 60%;
+    left: 15%;
+    transform: rotate(0deg);
+    font-size: 33px;
+    width: 270px;
+    height: 50px;
 	}
 }
 
@@ -513,11 +542,15 @@ h3 {
     background-size: 85%;
 	}
 	.slide {
-		padding-top: 90px;
+		padding-top: 70px;
 	}
 	.header__search {
     margin: 0 10px;
 	}
+	.info-sl__slider button {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -548,7 +581,32 @@ h3 {
 		-webkit-transition: right 0.8s;
 		-o-transition: right 0.8s;
 		transition: right 0.8s; }
+}
+
+@media (max-width: 640px) {
+ .info-sl__discounts {
+    top: 68%;
+    left: 15%;
+    font-size: 23px;
+    width: 250px;
+    height: 35px;
+    padding-left: 10px;
 	}
+	.info-sl__text-new h1 {
+    font-size: 35px;
+    line-height: 30px;
+    margin-bottom: 13px;
+	}
+	.info-sl__text-new p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+	}
+	.info-sl__text-new:before {
+		display: none;
+	}
+}
 
 @media (max-width: 530px) {
 	.header__logo:before {
@@ -562,6 +620,49 @@ h3 {
 	}
 	.mob-callback__phone {
 		display: flex;
+	}
+}
+
+@media (max-width: 515px) {
+	.info-sl__slider button {
+    width: 35px;
+    height: 35px;
+	}
+	.info-sl__text-new {
+    top: 20%;
+    left: 10%;
+	}
+	.info-sl__text-new {
+    max-width: 380px;
+	}
+	.info-sl__text-new h1 {
+    font-size: 33px;
+    line-height: 23px;
+	}
+	.info-sl__discounts {
+    top: 60%;
+    left: 10%;
+    font-size: 23px;
+    width: 180px;
+    height: 45px;
+    padding-left: 10px;
+	}
+		.slider__item img {
+    height: 250px;
+	}
+}
+
+@media (max-width: 414px) {
+	.info-sl__text-new {
+    max-width: 250px;
+    top: 8%;
+    left: 18%;
+	}
+	.info-sl__discounts {
+    top: 60%;
+    left: 18%;
+    width: 230px;
+    height: 45px;
 	}
 }
 
@@ -586,8 +687,21 @@ h3 {
 	.header__info {
     justify-content: flex-end;
 	}
+	.slide {
+    padding-top: 56px;
+	}
 }
 
-@media (max-width: 360px) {
-
+@media (max-width: 320px) {
+		.info-sl__text-new {
+    max-width: 250px;
+    top: 8%;
+    left: 13%;
+	}
+	.info-sl__discounts {
+    top: 63%;
+    left: 13%;
+    width: 230px;
+    height: 45px;
+	}
 }

@@ -41,6 +41,8 @@
 
 .slider__item img {
 	position: relative;
+	max-width: 100%;
+	object-fit: cover;
 }
 
 .info-sl__discounts {
