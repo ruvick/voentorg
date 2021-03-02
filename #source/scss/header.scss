@@ -22,11 +22,11 @@
 
 .header {
 	background: #FFFFFF;  
-	min-height: 100px; 
+	min-height: 100px;  
 	display: flex;
 	align-items: center;
 	&__row {
-		justify-content: space-between; 
+		justify-content: space-between;  
 		align-items: center;
 		// min-height: 63px;
 	}
@@ -119,6 +119,26 @@
 		}
 	}
 
+.mob-callback__phone {
+	display: none;
+	width: 30px;
+	height: 32px;
+	justify-content: center;
+	align-items: center;
+}
+.mob-callback__phone:before {
+    content: '';
+    float: left;
+    // width: 28px;
+    width: 100%;
+    // height: 28px;
+    height: 100%;
+    background-size: 90%;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTMiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxMyAxMyI+DQogIDxpbWFnZSBpZD0icGhvbmUiIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFBMEFBQUFOQ0FZQUFBQnk2K1I4QUFBQUJITkNTVlFJQ0FnSWZBaGtpQUFBQVBOSlJFRlVLRk9OMEN0TEJVRWNodkhmU2VJbWcyQ1IyV0FUVVRCb0ZoU2JWWXlDV1V4Vy9RNUd2NERZTklzWUxFYnhVa1J3RmpSNFFReG5pOEtSMFQyeTRtWFBXNGJoL3o3enpFeXJIY01lSm56bUdWTlppSy9WL3RlbDFZN2hCbmx0T3B5RmVOc0VuYVRUYTZXWkxNU2pKbWdiSzdYU2FoYmlWaE8waUoycWRJNWtlbXlDK25HSE40eG1JVDc4QjZSWnE5UHBLSXQ4QTV1WXkwSTg2QlZLdGpQMFlUb0xNWm4vekljcHBTenlTUnpqR3ZOZHNDenlRU3hWaDE3aC9ndXF3Rm5zNHduTE9NVWh4bXJheTI5UXpiaUxFYVJmVEtaNlhuNUFGWmpldUk0MURQUUVkVXRsa1NkNEFlbmE0eGpDeFR2emQxNHBrQ1BNS3dBQUFBQkpSVTVFcmtKZ2dnPT0iLz4NCjwvc3ZnPg0K);
+}
+
 .header__bascket-block {
 	align-items: center;
 }
@@ -160,11 +180,11 @@
 .header__menu {}
 .menu {}
 .menu__icon {}
-.menu__body {
-
-}
+.menu__body {}
 .menu__list {
-	// align-items: center;
+	max-width: 920px;
+	width: 100%;
+  justify-content: space-between;
 }
 .menu__link {
 	min-height: 56px;
@@ -172,7 +192,7 @@
 	align-items: center;
 	justify-content: center;
 	color: #fff;
-	margin-right: 50px;
+	// margin-right: 50px;
 }
 .mob-menu {}
 .mob-menu__list {}
@@ -190,13 +210,31 @@
   background-repeat: no-repeat; 
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTUiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNSAxMiI+DQogIDxpbWFnZSBpZD0idmlldy1jb21meSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjEyIiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQUE4QUFBQU1DQVlBQUFDOVF1ZmtBQUFBQkhOQ1NWUUlDQWdJZkFoa2lBQUFBTWhKUkVGVUtGUEYwQ0ZMZzFFWXhmSGZ1bUFWWnB0Z0dWZ0ViV01mUVRBTWpPTUZteXpZTElMZHVqREJxTW5xMmhZSEJzUENCTU9LWUZqWVlCOUFMajdod2ZvR2I3cm4vTys1ejdtM1VZMnJMbmI5cmhsT1l2OVhyN0JCSy9paVVZMnJkeHlGY1lhWEZNNTZpbkwyS3ZodDdmQUlCM0hiRGU3UzVLekwxRStjQjM4c2s2L1JET01CL1JUT3VnUy8wQW4rV3J0MnJRKzd4RjVVZVVJdjFjNTZpVytjQnArVTJzODRER09BK3hUTytnMGZ1QWcrL044M0gyTW5xc3pSVHJXelhtT0wvZURMSDJBOVVzbk5qOVFBQUFBQUFFbEZUa1N1UW1DQyIvPg0KPC9zdmc+DQo=');
 }
-
+.mob-search {
+ display: none;
+ width: 30px;
+ height: 30px;
+ background: #65B965;
+ border-radius: 50%;
+ justify-content: center;
+ align-items: center;
+ flex: 0 0 30px;
+}
+.mob-search:after {
+ content: "";
+ float: right;
+ width: 14px;
+ height: 12px;
+ background-position: 0 0;
+ background-repeat: no-repeat;
+ background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCI+DQogIDxpbWFnZSBpZD0ic2VhcmNoIiB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQTRBQUFBT0NBWUFBQUFmU0MzUkFBQUFCSE5DU1ZRSUNBZ0lmQWhraUFBQUFRUkpSRUZVS0ZPVjBqMHJobUVVQi9EZms4aEtZbFNTUk5tOVpNRElwcFF2UU9RTHlNWmtVVUl5R0pRdndHS3lHS3pLUzhrZ0gwQkdzVHc2ZFYyNnV6eFBQZTdsN3E3enU4KzUvdWVxMWV0MTZlbkJLcWJRZ1FjYzR5a1hWTisxQkNkd2lXNjg0aFBEcVhBRFJ5VU9HSjJlOFlVbDNLU2lmcHhqRXJPNExqdHVZUnZURlpScnV2Q0NPOHlWOEFwREdHaDBGcHhpR1owbGpCSDZNTm9FSHFiUTJrcTRqL1hVOGEzQVVSeXB4dm5IU2ppQ2U5eGlBUitwSU5BZUl0VVZuRFJheHhwaXBIZGNwSFZFR0hIMjZMYUxIWHhublBjWTN6UFlUQmVnSFk4NFFHOUtQZmE4bUhFVk5zbEdqSHlXa3YzRnJjRDQ0Ui9jS3F6aWVZei9CMlk4R0ZmMEJ6Z1BXaFg0TXhhYkFBQUFBRWxGVGtTdVFtQ0MiLz4NCjwvc3ZnPg0K');
+}
 
 // Стиль иконки бургера
 .icon-menu {
  display: none;
  position: absolute;
- top: 22px;
+ top: 26px;
  right: 10px;
  width: 30px;
  height: 18px;
@@ -213,7 +251,7 @@
  position: absolute;
  width: 100%;
  height: 2px;
- background-color: #fe9d2b; }
+ background-color: #65B965; }
 .icon-menu span:first-child {
  top: 0px; }
 .icon-menu span:last-child {
@@ -259,7 +297,7 @@
 	top: 100%;
 	left: 50%;
   transform: translate(-50%, 0%);
-	max-width: 1140px;
+	max-width: 1141px;
 	width: 100%;
 	overflow: auto;
 	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.28);

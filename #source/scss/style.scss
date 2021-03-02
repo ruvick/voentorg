@@ -5,46 +5,47 @@
 //<ШРИФТЫ>===============================================================================================
 
 //<Подключаем шрифты>=======================================================================================
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
 
-@font-face {
-	font-family: "Jost";
-	src: url("../fonts/Jost-Light.eot");
-	src: local("☺"), url("../fonts/Jost-Light.woff") format("woff"), url("../fonts/Jost-Light.ttf") format("truetype"), url("../fonts/Jost-Light.svg") format("svg");
-	font-weight: 300;
-	font-style: normal;  
-}
+// @font-face {
+// 	font-family: "Jost";
+// 	src: url("../fonts/Jost-Light.eot");
+// 	src: local("☺"), url("../fonts/Jost-Light.woff") format("woff"), url("../fonts/Jost-Light.ttf") format("truetype"), url("../fonts/Jost-Light.svg") format("svg");
+// 	font-weight: 300;
+// 	font-style: normal;  
+// }
 
-@font-face {
-	font-family: "Jost";
-	src: url("../fonts/Jost-Regular.eot");
-	src: local("☺"), url("../fonts/Jost-Regular.woff") format("woff"), url("../fonts/Jost-Regular.ttf") format("truetype"), url("../fonts/Jost-Regular.svg") format("svg");
-	font-weight: 400;
-	font-style: normal;   
-}
+// @font-face {
+// 	font-family: "Jost";
+// 	src: url("../fonts/Jost-Regular.eot");
+// 	src: local("☺"), url("../fonts/Jost-Regular.woff") format("woff"), url("../fonts/Jost-Regular.ttf") format("truetype"), url("../fonts/Jost-Regular.svg") format("svg");
+// 	font-weight: 400;
+// 	font-style: normal;    
+// }
 
-@font-face {
-	font-family: "Jost"; 
-	src: url("../fonts/Jost-Medium.eot");
-	src: local("☺"), url("../fonts/Jost-Medium.woff") format("woff"), url("../fonts/Jost-Medium.ttf") format("truetype"), url("../fonts/Jost-Medium.svg") format("svg");
-	font-weight: 500;
-	font-style: normal;
-}
+// @font-face {
+// 	font-family: "Jost"; 
+// 	src: url("../fonts/Jost-Medium.eot");
+// 	src: local("☺"), url("../fonts/Jost-Medium.woff") format("woff"), url("../fonts/Jost-Medium.ttf") format("truetype"), url("../fonts/Jost-Medium.svg") format("svg");
+// 	font-weight: 500;
+// 	font-style: normal; 
+// }
  
-@font-face {
-	font-family: "Jost";
-	src: url("../fonts/Jost-SemiBold.eot");
-	src: local("☺"), url("../fonts/Jost-SemiBold.woff") format("woff"), url("../fonts/Jost-SemiBold.ttf") format("truetype"), url("../fonts/Jost-SemiBold.svg") format("svg");
-	font-weight: 600;
-	font-style: normal;
-}
+// @font-face {
+// 	font-family: "Jost";
+// 	src: url("../fonts/Jost-SemiBold.eot");
+// 	src: local("☺"), url("../fonts/Jost-SemiBold.woff") format("woff"), url("../fonts/Jost-SemiBold.ttf") format("truetype"), url("../fonts/Jost-SemiBold.svg") format("svg");
+// 	font-weight: 600;
+// 	font-style: normal;
+// }
 
-@font-face {
-	font-family: "Jost";
-	src: url("../fonts/Jost-Bold.eot");
-	src: local("☺"), url("../fonts/Jost-Bold.woff") format("woff"), url("../fonts/Jost-Bold.ttf") format("truetype"), url("../fonts/Jost-Bold.svg") format("svg");
-	font-weight: 700;
-	font-style: normal;
-}
+// @font-face {
+// 	font-family: "Jost";
+// 	src: url("../fonts/Jost-Bold.eot");
+// 	src: local("☺"), url("../fonts/Jost-Bold.woff") format("woff"), url("../fonts/Jost-Bold.ttf") format("truetype"), url("../fonts/Jost-Bold.svg") format("svg");
+// 	font-weight: 700;
+// 	font-style: normal;
+// }
 
 @font-face {
 	font-family: "Pobeda";
@@ -461,9 +462,30 @@ h3 {
 //</ОСНОВНОЙ БЛОК>====================================================================================================================================
 
 //<Адаптив>===========================================================================================================================================
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
+	.slick-prev {
+    left: 0%;
+	}
+	.slick-next {
+    right: 0;
+	}
+}
+
+@media (max-width: 1150px) {
 	.container {
 		padding: 0 10px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.header__search {
+    margin: 0 20px;
+	}
+}
+
+@media (max-width: 960px) {
+.header__callback {
+    max-width: 180px;
 	}
 }
 
@@ -472,16 +494,54 @@ h3 {
 		position: fixed;
 		width: 100%;
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		z-index: 500000;
+		min-height: 70px;
 	}
 	.icon-menu {
 		display: block;
 	}
-	.menu__body {
+	.header__bascket,
+	.header-top,
+	.header-bottom {
 		display: none;
+	}
+	.header__bascket-block {
+    margin-right: 50px;
+	}
+	.header__logo:before {
+		height: 55px;
+    background-size: 85%;
+	}
+	.slide {
+		padding-top: 90px;
+	}
+	.header__search {
+    margin: 0 10px;
 	}
 }
 
 @media (max-width: 700px) {
+	.header__search {
+    display: none;
+	}
+	.header__info {
+		max-width: 370px;
+    justify-content: space-between;
+	}
+	.header__callback {
+    order: 1;
+	}
+	.header__callback:before {
+    bottom: -5px;
+	}
+	.mob-search {
+	  display: flex;
+	  order: 2;
+	  margin-top: 2px;
+	}
+	.header__bascket-block {
+    order: 3;
+	}
 	.mob-menu {
 		width: 100%;
 		right: -100%;
@@ -489,3 +549,45 @@ h3 {
 		-o-transition: right 0.8s;
 		transition: right 0.8s; }
 	}
+
+@media (max-width: 530px) {
+	.header__logo:before {
+    background-size: 80%;
+	}
+	.header__callback {
+		display: none;
+	}
+	.header__info {
+    max-width: 220px;
+	}
+	.mob-callback__phone {
+		display: flex;
+	}
+}
+
+@media (max-width: 380px) {
+	.header {
+    min-height: 55px;
+	}
+	.header__logo {
+		width: 125px;
+		margin-right: 5px;
+	}
+	.header__logo:before {
+		height: 50px;
+    background-size: 70%;
+	}
+	.icon-menu {
+ 	top: 20px;
+	}
+	.mob-callback__phone {
+		display: none;
+	}
+	.header__info {
+    justify-content: flex-end;
+	}
+}
+
+@media (max-width: 360px) {
+
+}
