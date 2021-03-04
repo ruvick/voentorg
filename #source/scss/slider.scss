@@ -18,7 +18,7 @@
 	justify-content: center;
 	align-items: center;
 }
-.info-sl__slider button:before {   
+.info-sl__slider button:before {    
 	content:'';
 	float: left;
 	width: 8px;
@@ -136,6 +136,9 @@
 	display: flex;
   align-items: center;
   justify-content: center;
+}
+.select-slider-big__item img {
+    max-width: 100%;
 }
 .select-prod-slider {
 	width: 66px;

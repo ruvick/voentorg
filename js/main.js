@@ -797,7 +797,7 @@ if (document.body.clientWidth>1024){
 	}
 	$(document).ready(function() {
 		$(".menu__catalogy").on("mouseover", showMenu);
-		$(".header-bottom").on("mouseleave", hideMenu);
+		$(".header").on("mouseleave", hideMenu); 
 	});
 }
 
