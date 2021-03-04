@@ -18,7 +18,7 @@ if (isMobile.any()) { }
 
 
 //BURGER
-let iconMenu = document.querySelector(".icon-menu");  
+let iconMenu = document.querySelector(".icon-menu");   
 let body = document.querySelector("body");
 let menuBody = document.querySelector(".mob-menu");
 if (iconMenu) {
@@ -33,9 +33,11 @@ if (iconMenu) {
 if (document.body.clientWidth>1024){
 	function hideMenu() {
 		$('.mob-menu').slideUp(600);
+		$('.menu__link-cat').removeClass('active');
 	}
 	function showMenu() {
 		$('.mob-menu').slideDown(600);
+		$('.menu__link-cat').addClass('active');
 	}
 	$(document).ready(function() {
 		$(".menu__catalogy").on("mouseover", showMenu);
